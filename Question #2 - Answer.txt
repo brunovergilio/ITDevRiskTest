@@ -1,0 +1,4 @@
+In order to extend functionality to support more categories, the TradeContextData can be expanded, and TradeContext's ProcessTrade()
+can be overloaded in order to account for new or different parameters; as for the logic classes, one can implement a new class
+that implements the ITradeProcessStrategy interface, and provide it to TradeContext, and the last part would be to create a new
+trade class that implements ITrade and derives from TradeBase, and add a new category value to the TradeCategory enumeration.
